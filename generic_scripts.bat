@@ -32,7 +32,8 @@ REM ----------------------------------------------------------------
 
 :: Create Magento Dir-tree through batch file ::
 REM Script to create multiple directory structure for Magento Modules
-@echo off
+rem @echo off
+echo %AppData%
 SETLOCAL EnableDelayedExpansion
 SETLOCAL EnableExtensions
 
@@ -44,13 +45,15 @@ SET moduleApp="Magento Module\app"
 SET moduleSkin="Magento Module\skin"
 SET moduleJs="Magento Module\js"
 SET moduleLib="Magento Module\lib"
+SET moduleCore="%moduleApp%\code\local"
 
 md %moduleApp%/code/local
+md "%moduleCore%/%packageName%/%moduleName%"
 md %moduleApp%/etc/modules
 md %moduleApp%/design/adminhtml/default/default/layout
 md %moduleApp%/design/frontend/base/default/layout
 
-cd %moduleApp%/etc/modules/
+pushd %moduleApp%/etc/modules/
 (
 echo ^<?xml version="1.0" encoding="UTF-8"?^>
 echo ^<config^>
