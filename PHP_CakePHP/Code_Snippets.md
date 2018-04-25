@@ -26,3 +26,53 @@ function multiArrayKeyCount(array $arr, $key) {
     return $keyCount;
 }
 ```
+```php
+function checkMultiArrayKeyEmpty($array, $searchKey) {
+    $iterator = new RecursiveIteratorIterator(
+                    new RecursiveArrayIterator(
+                        $array,
+                        RecursiveArrayIterator::CHILD_ARRAYS_ONLY
+                    )
+                );
+    $keyEmptyCount = $keyExistCount = 0;
+    foreach($iterator as $key => $value) {
+        if ($searchKey == $key) {
+            $keyExistCount++;
+            if (empty($value) || $value == 0) {
+                # $result[] = $value;
+                $keyEmptyCount++;
+            }
+        }
+    }
+    # return $keyEmptyCount;
+    if ($keyExistCount == $keyEmptyCount && $keyEmptyCount > 0) {
+        return true;
+    }
+    return false;
+}
+```
+```ctp
+function checkMultiArrayKeyEmpty($array, $searchKey) {
+    $iterator = new RecursiveIteratorIterator(
+                    new RecursiveArrayIterator(
+                        $array,
+                        RecursiveArrayIterator::CHILD_ARRAYS_ONLY
+                    )
+                );
+    $keyEmptyCount = $keyExistCount = 0;
+    foreach($iterator as $key => $value) {
+        if ($searchKey == $key) {
+            $keyExistCount++;
+            if (empty($value) || $value == 0) {
+                # $result[] = $value;
+                $keyEmptyCount++;
+            }
+        }
+    }
+    # return $keyEmptyCount;
+    if ($keyExistCount == $keyEmptyCount && $keyEmptyCount > 0) {
+        return true;
+    }
+    return false;
+}
+```
