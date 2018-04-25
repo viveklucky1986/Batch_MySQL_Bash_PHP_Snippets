@@ -50,6 +50,7 @@ function checkMultiArrayKeyEmpty($array, $searchKey) {
     }
     return false;
 }
+var_dump(checkMultiArrayKeyEmpty($arrayRes, 'key_name'));
 ```
 ```ctp
 function checkMultiArrayKeyEmpty($array, $searchKey) {
@@ -75,4 +76,5 @@ function checkMultiArrayKeyEmpty($array, $searchKey) {
     }
     return false;
 }
+var_dump(checkMultiArrayKeyEmpty($arrayRes, 'key_name'));
 ```
