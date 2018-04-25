@@ -1,6 +1,6 @@
 ### Verify if Array has no value for specifc key recursively ###
 ```php
-var_dump(arrayHasNoValueForKey('can_display_sla_grades', $warehouses));
+var_dump(arrayHasNoValueForKey('key_name', $arrayVar));
 function arrayHasNoValueForKey($key, array $arr) {
     $emptyValCount = 0;
     array_walk_recursive($arr, function($v, $k) use($key, &$emptyValCount) {
