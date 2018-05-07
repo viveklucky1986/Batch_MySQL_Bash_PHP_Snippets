@@ -20,3 +20,14 @@ set NL=^^^%NLM%%NLM%^%NLM%%NLM%
 ) > index.js
 pause
 ```
+
+### Print Newline thro' Batch Script ###
+```cmd
+@echo off
+set NLM=^
+
+
+set NL=^^^%NLM%%NLM%^%NLM%%NLM%
+echo There should be a newline%NL%inserted here.
+pause
+```
