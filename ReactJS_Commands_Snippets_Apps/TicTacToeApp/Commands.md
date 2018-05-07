@@ -5,8 +5,8 @@ cd tic-tac-tow-game && npm start
 
 ### Delete "src" folder contents and Create blank CSS and JS files
 ```cmd
-del /s /q src && md src && cd src && echo. 2> index.css && echo. 2> index.js
-del /s /q src && echo. 2> src/index.css && echo. 2> src/index.js
+del /s /q src && md src && cd src && echo. 2> index.css
+del /s /q src && echo. 2> src/index.css
 ```
 #### Create the "index.js" by executing below script(MakeReactIndexjs.cmd) inside "src" folder ####
 ```cmd
