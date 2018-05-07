@@ -1,0 +1,8 @@
+{
+    "backup_dir": "D:/ST3_Bak_Files",
+    "delete_old_backups": 7, // days to delete
+    "backup_per_day": true,
+    "max_backup_file_size_bytes": 10485760, // 10 MB
+    "open_in_same_line": true,
+    "show_previews": true
+}
