@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+[-HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+"AutoRun"="C:\\RR_Projects\\ConfigScripts\\AutoExec.bat"
