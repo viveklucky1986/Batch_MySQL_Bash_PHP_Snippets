@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\AutoExecBat]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"AutoExecBat"="C:\\RR_Projects\\ConfigScripts\\AutoExec.bat"
+[-HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+"AutoRun"="C:\\RR_Projects\\ConfigScripts\\AutoExec.bat"
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\AutoExecBat]
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"AutoExecBat"="C:\\RR_Projects\\ConfigScripts\\AutoExec.bat"
